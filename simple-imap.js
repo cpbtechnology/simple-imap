@@ -49,7 +49,7 @@ var SimpleImap = function(options) {
 											subject: mailObject.subject,
 											text: mailObject.text,
 											html: mailObject.html,
-											attachments: mailObject.attachments !== undefined ? mailObject.attachments : null,
+											attachments: mailObject.attachments !== undefined ? mailObject.attachments : [],
 											date: moment(mailObject.date).format('YYYY-MM-DD HH:mm:ss')
 										});
 									});
